@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle, #000428, #004e92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.map-container {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hub, .client-location {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: cyan;
+    border-radius: 50%;
+    box-shadow: 0 0 12px cyan;
+}
+
+.hub {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.client-location {
+    background: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+#usa { left: 80%; top: 30%; }
+#canada { left: 75%; top: 20%; }
+#uk { left: 60%; top: 40%; }
+#eu { left: 65%; top: 50%; }
+#uae { left: 55%; top: 65%; }
